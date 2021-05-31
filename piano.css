@@ -1,0 +1,114 @@
+html {
+    background-image: url("./piano_background.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.white_keys {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 12em;
+    z-index: -10;
+}
+
+.black_keys {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 12em;
+    z-index: 10;
+}
+
+.white_key {
+    display: inline-block;   
+    background-color: rgba(255, 245, 245, 0.8);
+    color: black;
+    border: 1px solid gray;
+    border-radius: 0 0 7% 7%;
+    margin-right: -0.25em;
+    width: 5%;
+    height: 19em;
+}
+
+.left {
+    display: inline-block;
+    position: relative;
+    margin: 0 5% 0 5%; 
+}
+
+.right {
+    display: inline-block;
+    position: relative;
+    margin: 0 10% 0 0;  
+}
+
+.black_key {
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 0 0 7% 7%;
+    width: 4vw;
+    height: 12em;
+    margin: 0 .35em;
+}
+
+span {
+    position: absolute;
+    bottom: 1.5vh;
+}
+
+.white_key span {
+    color: gray;
+    font-family: cursive;
+    font-size: 14px;
+}
+
+.black_key span {
+    color: rgb(184, 180, 180);
+    font-family: cursive;
+    font-size: 13px;
+    left: 1.3vw;
+}
+
+p {    
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: bold;
+    position: absolute;
+    bottom: 3.5vh; 
+}
+
+.white_key p {
+    margin: 3vh 2vw;
+}
+
+.black_key p {
+    margin: 3vh 1.3vw;
+}
+
+.playing {
+    animation-name: play;
+    animation-duration: 1s;
+}
+
+@keyframes play {
+    0% {
+        background-color: orangered;
+        transform: translate(0, 8px);
+    }
+
+    100% {
+        background-color: orange;
+        transform: translate(0, 0);
+    }
+}
