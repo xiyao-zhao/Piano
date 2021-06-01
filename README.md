@@ -1,5 +1,5 @@
 # Piano
-Piano one octave simulation web app
+Simulated one octave piano keyboard.
 
 This is a project inspired by Drum Kit. It is built with HTML, CSS and Vanilla JavaScript. The purpose of this project is to put knowledge into use. 
 
